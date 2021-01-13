@@ -1,7 +1,7 @@
 .. _contribution-guide:
 
-Contributing to Scanpy
-======================
+Contributing
+============
 
 Contributions to scanpy are welcome!
 This section of the docs provides some guidelines and tips to follow when contributing.
@@ -14,6 +14,7 @@ This section of the docs provides some guidelines and tips to follow when contri
     documentation
     external-tools
     release
+    versioning
 
 Parts of the guidelines have been adapted from the `pandas <https://pandas.pydata.org/pandas-docs/stable/development/index.html>`__ and `MDAnalysis <https://userguide.mdanalysis.org/stable/contributing.html>`__ guides.
 These are both excellent guides and we highly recommend checking them out.
