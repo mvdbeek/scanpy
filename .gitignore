@@ -33,6 +33,7 @@ __pycache__/
 /scanpy.egg-info/
 /*-env/
 /env-*/
+# This is necessary to make flit generate a setup.py
 /setup.py
 
 # OS stuff
