@@ -6,9 +6,7 @@ sphinx:
 python:
   version: 3.8
   install:
-  # https://github.com/takluyver/flit/pull/388
-  - method: pip
-    path: pip==20.3.3
+  - requirements: .pip-2033.txt
   - method: pip
     path: .
     extra_requirements:

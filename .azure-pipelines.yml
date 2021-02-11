@@ -41,9 +41,8 @@ jobs:
     displayName: 'Set env'
 
   - script: |
-      # https://github.com/takluyver/flit/pull/388
-      python -m pip install pip==20.3.3
-      # python -m pip install --upgrade pip
+      python -m pip install --upgrade pip
+      pip install -r .pip-2033.txt
       pip install pytest-cov wheel
       pip install .[dev,doc,test,louvain,leiden,magic,scvi,harmony,scrublet,scanorama]
     displayName: 'Install dependencies'
