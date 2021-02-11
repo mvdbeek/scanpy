@@ -41,7 +41,9 @@ jobs:
     displayName: 'Set env'
 
   - script: |
-      python -m pip install --upgrade pip
+      # https://github.com/takluyver/flit/pull/388
+      python -m pip install pip==20.3.3
+      # python -m pip install --upgrade pip
       pip install pytest-cov wheel
       pip install .[dev,doc,test,louvain,leiden,magic,scvi,harmony,scrublet,scanorama]
     displayName: 'Install dependencies'
@@ -104,6 +106,7 @@ jobs:
     displayName: 'Display installed versions'
 
   - script: |
+      pip install flit
       flit build
       twine check dist/*
     displayName: 'Build & Twine check'
